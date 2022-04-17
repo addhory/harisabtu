@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect as reactEffect } from 'react';
 import { postList_DUMMY } from '../utils/constans';
 
 // class Posts extends React.Component {
@@ -40,7 +40,7 @@ const Posts = () => {
 
   const [isLoading, setIsLoading] = React.useState(false);
 
-  useEffect(() => {
+  reactEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
       setPostData(postList_DUMMY);

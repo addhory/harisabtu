@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import React from 'react';
 import Posts from './components/Posts';
+import { AnotherModal as ModalNumber2 } from './components/Modal';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       </header>
       <main>
         <Posts />
+
+        <ModalNumber2 />
       </main>
     </div>
   );
