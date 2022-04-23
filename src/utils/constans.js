@@ -1,12 +1,12 @@
-export const postList_DUMMY = [
+export const productList_DUMMY = [
   {
     id: 1,
-    title: 'Berita Bali Hari Minggu',
-    description: 'Hari Minggu adalah Hari Libur',
+    title: 'Indomie',
+    price: 4000,
   },
   {
     id: 2,
-    title: 'Berita Bali Hari Senin',
-    description: 'Hari Senin adalah hari tidak libur',
+    title: 'Chitato',
+    price: 9500,
   },
 ];

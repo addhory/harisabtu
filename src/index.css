@@ -23,4 +23,5 @@ code {
 main {
   width: min(100% - 2rem);
   margin-inline: 1rem;
+  padding: 2rem;
 }
