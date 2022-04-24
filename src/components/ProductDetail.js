@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { productList_DUMMY } from '../utils/constans';
 
@@ -23,6 +23,9 @@ const ProductDetail = () => {
   };
 
   // fetch barang product dengan id 1
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <React.Fragment>
@@ -33,7 +36,6 @@ const ProductDetail = () => {
         <p>Price: {productData[0].price}</p>
         <p>Description</p>
       </div>
-      <button onClick={fetchData}>Fetch Data</button>
     </React.Fragment>
   );
 };

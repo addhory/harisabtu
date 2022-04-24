@@ -25,3 +25,7 @@ main {
   margin-inline: 1rem;
   padding: 2rem;
 }
+
+.App-header {
+  text-align: center;
+}
