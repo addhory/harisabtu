@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import Button from './components/Button';
-import Typography from './components/Typography';
+import { Typography, Button } from './components';
 
 function App() {
+  const [value, setValue] = React.useState<string>();
+
   return (
     <div className='App'>
       <Button variant='secondary' size='medium'>
