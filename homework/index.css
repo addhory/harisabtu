@@ -1,0 +1,268 @@
+/* Start globals */
+html,
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  color: #4f4d53;
+}
+.container {
+  max-width: 50%;
+  margin: auto;
+  height: 100%;
+}
+h4 {
+  font-weight: 400;
+  font-size: 14px;
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 65%;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 75%;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/* End Globals */
+
+/* Start navbar */
+header {
+  background-color: #4f4d53;
+  height: 48px;
+}
+header .header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .header__wrapper .header__search-box {
+  position: relative;
+  background-color: #2d2d2d;
+  padding: 6px;
+  padding-left: 35px;
+  width: 200px;
+  border-radius: 3px;
+}
+header .header__wrapper .header__search-box .header__search-box__icon {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+}
+header .header__wrapper .header__search-box input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+header .header__wrapper .header__search-box input::placeholder {
+  color: #fff;
+}
+header .header__wrapper .header__search-box input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+header .header__wrapper .header__search-box input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+/* End navbar */
+
+/* Start main section */
+section.main {
+  background-image: url('./media/img_hero.jpg');
+  color: #fff;
+  height: 65vh;
+  background-position: right;
+  background-size: cover;
+}
+section.main .main__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+section.main .main__wrapper h1 {
+  margin: -50px 0 0;
+  color: #4f4d53;
+  font-size: 100px;
+  font-weight: 900;
+}
+@media (max-width: 1200px) {
+  section.main .main__wrapper h1 {
+    font-size: 90px;
+  }
+}
+@media (max-width: 1000px) {
+  section.main .main__wrapper h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 800px) {
+  section.main .main__wrapper h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 800px) {
+  section.main .main__wrapper {
+    align-items: flex-start;
+  }
+  section.main .main__wrapper h1 {
+    font-size: 60px;
+    margin-top: 110px;
+  }
+}
+/* End main section */
+
+/* Start about us */
+section.about-us {
+  margin: 0;
+  text-align: center;
+}
+section.about-us .about-us__team-members {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -100px;
+}
+section.about-us .about-us__team-members img {
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+}
+section.about-us .about-us__heading {
+  color: #e8be02;
+  font-size: 64px;
+  font-weight: 900;
+}
+section.about-us .about-us__description {
+  color: #4f4d53;
+  font-size: 20px;
+  line-height: 1.5;
+}
+section.about-us .about-us__team-members-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
+}
+section.about-us .about-us__team-members-info .about-us__team-member {
+  display: flex;
+}
+section.about-us .about-us__team-members-info .about-us__team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+section.about-us
+  .about-us__team-members-info
+  .about-us__team-member
+  .about-us__team-member__info {
+  padding-left: 35px;
+  text-align: left;
+}
+section.about-us
+  .about-us__team-members-info
+  .about-us__team-member
+  .about-us__team-member__info
+  h4 {
+  margin-bottom: 0;
+  color: #e8be02;
+}
+section.about-us
+  .about-us__team-members-info
+  .about-us__team-member
+  .about-us__team-member__info
+  p {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+@media (max-width: 1200px) {
+  section.about-us .about-us__team-members {
+    margin-top: -80px;
+  }
+  section.about-us .about-us__team-members img {
+    height: 160px;
+    width: 160px;
+  }
+}
+@media (max-width: 860px) {
+  section.about-us .about-us__team-members {
+    margin-top: -65px;
+  }
+  section.about-us .about-us__team-members img {
+    height: 130px;
+    width: 130px;
+  }
+  section.about-us .about-us__heading {
+    font-size: 55px;
+  }
+  section.about-us .about-us__description {
+    font-size: 17px;
+  }
+  section.about-us .about-us__team-members-info .about-us__team-member img {
+    width: 85px;
+    height: 85px;
+  }
+}
+@media (max-width: 650px) {
+  section.about-us .about-us__team-members {
+    margin-top: -50px;
+  }
+  section.about-us .about-us__team-members img {
+    height: 100px;
+    width: 100px;
+  }
+  section.about-us .about-us__heading {
+    font-size: 45px;
+  }
+  section.about-us .about-us__team-members-info .about-us__team-member img {
+    width: 75px;
+    height: 75px;
+  }
+  section.about-us
+    .about-us__team-members-info
+    .about-us__team-member
+    .about-us__team-member__info {
+    padding-left: 15px;
+  }
+}
+/* End about us */
+
+/* Start footer */
+footer {
+  background-color: #4f4d53;
+  border-top: 12px solid #e8be02;
+  height: 320px;
+}
+footer .footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  color: #fff;
+}
+footer .footer__wrapper .footer__column h3 {
+  color: #e8be02;
+  font-weight: 900;
+  font-size: 20px;
+}
+footer .footer__wrapper .footer__column ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer .footer__wrapper .footer__column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__column ul li h4 {
+  margin: 5px 0;
+}
+/* End footer */
